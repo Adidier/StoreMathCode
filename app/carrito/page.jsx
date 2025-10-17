@@ -9,10 +9,10 @@ export default function Cart() {
         return <p>Your cart is empty</p>;
     } else {
         return (
-            <>
+            <div className="flex flex-col m-3 gap-3 place-self-center">
                 {
                     cartContext.cart.map((item) => (
-                        <div key={item.id} className="flex flex-col p-4 rounded-md gap-3 border-1 items-start shadow max-w-lg m-5">
+                        <div key={item.id} className="flex flex-col p-4 rounded-md gap-3 border-1 border-gray-400 items-start shadow max-w-lg">
                             <div className="text-lg font-bold">
                                 {item.name}
                             </div>
@@ -26,7 +26,7 @@ export default function Cart() {
 
                 <form action="/api/checkout_sessions" method="POST">
                     <section>
-                        <button type="submit" className="bg-stone-700 text-gray-50 font-bold px-4 py-2 rounded-md hover:bg-pink-500 transition">Checkout</button>
+                        <button type="submit" className="bg-black text-gray-50 font-bold px-4 py-2 rounded-md hover:bg-blue-700">Checkout</button>
                     </section>
                     {
                         cartContext.cart.map((item) => (
@@ -34,7 +34,7 @@ export default function Cart() {
                         ))
                     }
                 </form>
-            </>
+            </div>
         );
     }
 
