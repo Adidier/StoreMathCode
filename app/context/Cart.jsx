@@ -1,11 +1,12 @@
 'use client';
 
 import { createContext, useContext, useState } from 'react';
+import { useLocalStorage } from 'usehooks-ts';
 
 const CartContext = createContext();
 
 export function CartProvider({ children }) {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useLocalStorage('cart',[]);
 
   function addItem(item) {
     setCart(prev => {
