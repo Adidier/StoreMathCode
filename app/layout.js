@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./ui/globals.css";
-import { NavBar } from "./ui/NavBar";
-import { Providers } from "./context/Providers"
+import "@/app/ui/globals.css";
+import { NavBar } from "@/app/ui/NavBar";
+import { CartStatusButton } from "@/app/ui/CartStatusButton";
+import { Providers } from "@/app/context/Providers"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <NavBar />
           {children}
+          <CartStatusButton />
         </Providers>
       </body>
     </html>
