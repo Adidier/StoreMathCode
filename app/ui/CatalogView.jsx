@@ -1,5 +1,6 @@
 import { fetchPrice } from "@/lib/data";
 import { AddToCartBtn } from "@/app/ui/AddToCartBtn";
+import Image from "next/image";
 
 export function CatalogView({
     data
@@ -10,6 +11,8 @@ export function CatalogView({
                 data.map((item) => (
                     <div key={item.id} className="flex flex-col p-4 rounded-md border-1 border-gray-400 gap-3 shadow md:max-w-3xs">
                         <h2 className="text-xl font-bold mb-2">{item.name}</h2>
+                        {/* TODO: Seguramente se van a ocupar todas las imagenes del mismo tamaño */}
+                        <Image src={item.images[0]} alt={item.name} width={427} height={427} className="object-cover rounded-md mb-2" />
                         <h3 className="text-lg  font-bold p-1">${fetchPrice(item.default_price)}</h3>
                         <div>{item.description}</div>
                         <AddToCartBtn item={item} />
