@@ -1,4 +1,5 @@
 import { fetchServicios } from "@/lib/data";
+import { CatalogView } from "@/app/ui/CatalogView";
 
 export default async function Productos() {
     const servicios = await fetchServicios();
@@ -8,9 +9,7 @@ export default async function Productos() {
         if (servicios.length === 0) { return <div>No hay servicios disponibles</div> }
         else {
             return (
-                <div>
-
-                </div>
+                <CatalogView data={servicios.data} />
             );
         }
     }

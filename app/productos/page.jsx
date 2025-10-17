@@ -1,16 +1,15 @@
 import { fetchProductos } from "@/lib/data";
+import { CatalogView } from "@/app/ui/CatalogView";
 
 export default async function Productos() {
-    const products = await fetchProductos();
-    if (products === null) {
+    const productos = await fetchProductos();
+    if (productos === null) {
         return <div>Error al cargar los productos</div>
     } else {
-        if (products.length === 0) { return <div>No hay productos</div> }
+        if (productos.length === 0) { return <div>No hay productos</div> }
         else {
             return (
-                <div>
-
-                </div>
+                <CatalogView data={productos.data} />
             );
         }
     }
