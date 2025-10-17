@@ -1,5 +1,5 @@
 import { fetchPrice } from "@/lib/data";
-// import { CartControl } from "./CartControl";
+import { AddToCartBtn } from "@/app/ui/AddToCartBtn";
 
 export function CatalogView({
     data
@@ -12,7 +12,7 @@ export function CatalogView({
                         <h2 className="text-xl font-bold mb-2">{item.name}</h2>
                         <h3 className="text-lg  font-bold p-1">${fetchPrice(item.default_price)}</h3>
                         <div>{item.description}</div>
-                        {/* <CartControl item={item} /> */}
+                        <AddToCartBtn item={item} />
                     </div>
                 ))
             }
