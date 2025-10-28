@@ -9,7 +9,7 @@ export default function Cart() {
     if (cartContext.cart.length === 0) {
         return (
             <>
-                <main>
+                <main className="flex flex-col min-h-screen items-center w-full pb-20 gap-16 sm:p-20 overflow-x-hidden">
                     <p>Your cart is empty</p>
                 </main>
                 <Footer />
