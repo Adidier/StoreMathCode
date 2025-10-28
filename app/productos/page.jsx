@@ -1,5 +1,6 @@
 import { fetchProductos } from "@/lib/data";
 import { CatalogView } from "@/app/ui/CatalogView";
+import { Footer } from "../ui/Footer";
 
 export default async function Productos() {
     const productos = await fetchProductos();
@@ -9,7 +10,12 @@ export default async function Productos() {
         if (productos.length === 0) { return <div>No hay productos</div> }
         else {
             return (
-                <CatalogView data={productos.data} />
+                <>
+                    <main>
+                        <CatalogView data={productos.data} />
+                    </main>
+                    <Footer />
+                </>
             );
         }
     }
