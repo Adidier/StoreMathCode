@@ -1,7 +1,10 @@
+import { Footer } from "./ui/Footer";
+
 export default function Home() {
   return (
-    <div>
-
-    </div>
+    <>
+      <main></main>
+      <Footer />
+    </>
   );
 }
