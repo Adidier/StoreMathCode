@@ -11,7 +11,7 @@ export default async function Productos() {
         else {
             return (
                 <>
-                    <main>
+                    <main className="flex flex-col min-h-screen items-center w-full pb-20 gap-16 sm:p-20 overflow-x-hidden">
                         <CatalogView data={servicios.data} />
                     </main>
                     <Footer />
