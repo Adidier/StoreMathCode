@@ -3,6 +3,7 @@
 import { useCart } from "@/app/context/Cart";
 import { Footer } from "../ui/Footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Cart() {
     const cartContext = useCart();
@@ -10,8 +11,9 @@ export default function Cart() {
     if (cartContext.cart.length === 0) {
         return (
             <>
-                <main className="flex flex-col min-h-screen items-center w-full pb-20 gap-16 sm:p-20 overflow-x-hidden">
-                    <p>Your cart is empty</p>
+                <main className="grid justify-items-center items-center pb-20 gap-16 sm:p-20 overflow-x-hidden">
+                    <p className="rounded-md bg-gray-50 p-5 text-xl font-bold shadow-md">El carrito de compras esta vacio</p>
+                    <Link className="p-2 text-gray-50 shadow-md bg-red-600 rounded-lg" href="/productos">Revisa nuestros productos</Link>
                 </main>
                 <Footer />
             </>

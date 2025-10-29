@@ -25,6 +25,7 @@ export function NavBar() {
         {/* <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/">EVENTOS SOCIALES</Link>
                 <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/galeria">GALERIA</Link>
                 <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/">TIENDA</Link> */}
+        <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/carrito">CARRITO</Link>
         <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/contacto">CONTACTO</Link>
       </div>
     </nav>
