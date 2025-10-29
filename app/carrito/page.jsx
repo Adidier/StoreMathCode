@@ -2,6 +2,7 @@
 
 import { useCart } from "@/app/context/Cart";
 import { Footer } from "../ui/Footer";
+import Image from "next/image";
 
 export default function Cart() {
     const cartContext = useCart();
@@ -21,14 +22,23 @@ export default function Cart() {
                 <main className="flex flex-col m-3 gap-3 place-self-center">
                     {
                         cartContext.cart.map((item) => (
-                            <div key={item.id} className="flex flex-col p-4 rounded-md gap-3 border-1 border-gray-400 items-start shadow max-w-lg">
-                                <div className="text-lg font-bold">
-                                    {item.name}
+                            <div key={item.id} className="flex flex-row rounded-md gap-3 border border-gray-400 items-start shadow max-w-lg">
+                                <Image
+                                    src={item.images[0]}
+                                    alt={item.name}
+                                    width={100}
+                                    height={100}
+                                    className="object-cover rounded-t-md" />
+                                <div className="flex flex-row p-2 w-full">
+                                    <p className="text-lg font-bold">
+                                        {item.name}
+                                    </p>
                                 </div>
-                                <div>
-                                    {item.description}
-                                </div>
-                                <button onClick={() => { cartContext.removeItem(item.id) }} className="bg-stone-200 text-gray-700 font-bold px-4 py-2 rounded-md hover:bg-red-500 hover:text-white text-xs transition"> Quitar del carrito </button>
+                                <button
+                                    onClick={() => { cartContext.removeItem(item.id) }}
+                                    className="grid place-self-end m-1 w-fit text-gray-700 font-bold rounded-md hover:bg-red-300 hover:text-white text-xs transition">
+                                    <Image src="/trash.svg" alt="Cart" width={35} height={35} className="inline p-1" />
+                                </button>
                             </div>
                         ))
                     }
