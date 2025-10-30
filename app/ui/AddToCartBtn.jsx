@@ -8,7 +8,7 @@ export function AddToCartBtn({ item }) {
         <div>
             <button className="bg-black text-gray-50 font-bold px-4 py-2 rounded-md hover:bg-blue-700"
                 onClick={() => { cart.addItem(item) }
-                }>Add to cart</button>
+                }>Agregar al carrito</button>
         </div>
     )
 }
