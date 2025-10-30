@@ -21,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${cormorant_garamond.variable} ${mulish.variable} antialiased grid grid-rows-[auto_1fr_auto] min-h-screen`}
+      >
         <Providers>
           <NavBar />
           {children}
