@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata } from "nvext";
 import { Cormorant_Garamond, Mulish } from "next/font/google";
 import "./globals.css"
 import { NavBar } from "./ui/NavBar";
