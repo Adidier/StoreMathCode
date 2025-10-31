@@ -8,8 +8,8 @@ export function SearchBar() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleReturnKeyDown = (e) => {
-    if (!searchTerm.trim() === "") {
-      router.push("/contacto")
+    if (e.key === 'Enter' && searchTerm.trim() != "") {
+      router.push(`/${searchTerm}`)
     }
   }
 
@@ -24,8 +24,8 @@ export function SearchBar() {
         className="border-l border-t border-b rounded-l-xs p-2 gap-2 border-gray-200 w-full outline-none" />
       <button
         onClick={() => {
-          if (!searchTerm.trim() === "") {
-            router.push("/contacto")
+          if (searchTerm.trim() != "") {
+            router.push(`/${searchTerm}`)
           }
         }}
         className="p-2 border-r border-t border-b rounded-r-xs border-gray-200"
