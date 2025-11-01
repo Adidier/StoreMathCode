@@ -11,7 +11,7 @@ export default function Cart() {
     if (cartContext.cart.length === 0) {
         return (
             <>
-                <main className="grid justify-items-center items-center pb-20 gap-16 sm:p-20 overflow-x-hidden bg-gray-200">
+                <main className="grid justify-items-center items-center pb-20 gap-16 sm:p-20 overflow-x-hidden bg-gray-100">
                     <p className="rounded-md bg-gray-50 p-5 text-xl font-bold shadow-md">El carrito de compras esta vacio</p>
                     <Link className="p-2 text-gray-50 shadow-md bg-red-600 rounded-lg" href="/productos">Revisa nuestros productos</Link>
                 </main>
@@ -21,7 +21,7 @@ export default function Cart() {
     } else {
         return (
             <>
-                <main className="flex flex-row h-[80vh] justify-center gap-20 bg-gray-200">
+                <main className="flex flex-row h-[80vh] justify-center gap-20 bg-gray-100">
                     <section className="max-h-142 flex flex-col gap-3 place-self-center bg-gray-50 shadow rounded-md min-w-1/2">
                         <div className="p-5 border-b border-gray-300 font-bold">
                             Tu compra
