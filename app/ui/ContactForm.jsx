@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function ContactForm() {
     return (
-        <div className="grid grid-cols-2 gap-10 ml-96 mr-96 mt-20 mb-40">
+        <div className="grid grid-cols-2 gap-10 p-10 rounded-xs shadow max-w-1/2 bg-gray-50">
             <div className="flex flex-col gap-7">
                 <header>
                     <h1 className="text-4xl">Contactanos</h1>
