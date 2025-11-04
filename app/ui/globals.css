@@ -30,6 +30,6 @@ body {
   color: white;
 }
 
-header {
-  font-family: var(--font-cormorant-serif);
-}
+/* header { */
+/*   font-family: var(--font-cormorant-serif); */
+/* } */
