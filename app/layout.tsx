@@ -1,4 +1,4 @@
-import type { Metadata } from "nvext";
+import type { Metadata } from "next";
 import { Cormorant_Garamond, Mulish } from "next/font/google";
 import "./globals.css"
 import { NavBar } from "./ui/NavBar";
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorant_garamond.variable} ${mulish.variable} antialiased grid grid-rows-[auto_1fr_auto] min-h-screen`}
+        className={`${cormorant_garamond} ${mulish.variable} antialiased grid grid-rows-[auto_1fr_auto] min-h-screen`}
       >
         <Providers>
           <NavBar />

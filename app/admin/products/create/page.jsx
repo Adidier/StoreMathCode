@@ -1,7 +1,6 @@
 "use client";
 
-import { useActionState } from "react";
-import Form from "next/form";
+import { useFormState } from "react-dom";
 import { createProduct } from "@/lib/actions";
 
 const initialState = {
@@ -9,7 +8,7 @@ const initialState = {
 };
 
 export default function CreateProduct() {
-  const [state, formAction, pending] = useActionState(
+  const [state, formAction, pending] = useFormState(
     createProduct,
     initialState,
   );
@@ -20,7 +19,7 @@ export default function CreateProduct() {
           Crear un nuevo producto
         </h1>
       </header>
-      <Form
+      <form
         action={formAction}
         className="p-5 rounded shadow-md bg-gray-100 flex flex-col gap-5 place-self-center w-1/3"
       >
@@ -71,7 +70,7 @@ export default function CreateProduct() {
         >
           CREAR
         </button>
-      </Form>
+      </form>
       {state?.message && (
         <div className="w-1/3 place-self-center m-10 p-7 rounded-md bg-red-500 text-gray-50 font-bold text-xl shadow-md">
           {state.message}

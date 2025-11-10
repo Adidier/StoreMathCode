@@ -21,7 +21,7 @@ export default async function App() {
             </>
         );
     } else {
-        if (servicios.length === 0) { return <div>No hay servicios disponibles</div> }
+        if (servicios.data.length === 0) { return <div>No hay servicios disponibles</div> }
         else {
             return (
                 <>
