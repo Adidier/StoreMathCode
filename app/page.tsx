@@ -1,5 +1,3 @@
-"use client";
-
 import { generateClient } from "aws-amplify/data";
 import { fetchServicios } from "@/lib/data";
 import { CatalogView } from "@/app/ui/CatalogView";
