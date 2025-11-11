@@ -73,7 +73,7 @@ export function Footer() {
                 <div className="flex flex-wrap font-bold text-sm">
                     <Link className="p-1.5 rounded-lg" href="/terminos">Condiciones generales de venta</Link>
                     <Link className="p-1.5 rounded-lg" href="/privacidad">Aviso de privacidad</Link>
-                    <Link className="p-1.5 rounded-lg" href="/">Términos y condiciones para paquetes de graduación</Link>
+                    <Link className="p-1.5 rounded-lg" href="/terminos_paquetes">Términos y condiciones para paquetes de graduación</Link>
                 </div>
             </div>
         </footer>
