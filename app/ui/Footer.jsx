@@ -67,8 +67,6 @@ export function Footer() {
                         </Link>
                     </div>
                 </div>
-                {/* Placeholder */}
-                <iframe src="https://www.facebook.com/fundacion.hidalguenseac.5"></iframe>
             </div>
             <div className="grid grid-cols-2 items-center pb-7 w-6xl">
                 <Image src="/logoFlashback.webp" alt="Logo" width={253} height={91} className="ml-8 mr-8 mt-1.5 mb-1.5" />
