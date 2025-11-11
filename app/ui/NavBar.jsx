@@ -24,6 +24,7 @@ export function NavBar() {
                     <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/productos">PRODUCTOS</Link>
                     <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/carrito">CARRITO</Link>
                     <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/contacto">CONTACTO</Link>
+                    <Link className="p-1.5 rounded-lg hover:text-amber-400" href="https://production.d31fjrkeuz0102.amplifyapp.com">SITIO PRINCIPAL</Link>
                 </div>
             </nav>
         );
