@@ -72,7 +72,7 @@ export function Footer() {
                 <Image src="/logoFlashback.webp" alt="Logo" width={253} height={91} className="ml-8 mr-8 mt-1.5 mb-1.5" />
                 <div className="flex flex-wrap font-bold text-sm">
                     <Link className="p-1.5 rounded-lg" href="/terminos">Condiciones generales de venta</Link>
-                    <Link className="p-1.5 rounded-lg" href="/">Aviso de privacidad</Link>
+                    <Link className="p-1.5 rounded-lg" href="/privacidad">Aviso de privacidad</Link>
                     <Link className="p-1.5 rounded-lg" href="/">Términos y condiciones para paquetes de graduación</Link>
                 </div>
             </div>

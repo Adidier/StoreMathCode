@@ -1,3 +1,5 @@
+import { Footer } from "../ui/Footer"
+
 export default function Terminos() {
   return (
     <>
@@ -12,9 +14,7 @@ export default function Terminos() {
         <div>
           <section>
             <header>
-              <h2 className="text-2xl font-bold">
-                1. Precios y Pagos
-              </h2>
+              <h2 className="text-2xl font-bold"> 1. Precios y Pagos </h2>
             </header>
             <p className="text-lg">
               Todos los precios están expresados en la moneda indicada e incluyen los impuestos aplicables. El pago debe completarse mediante los métodos disponibles al momento de la compra.
@@ -102,6 +102,7 @@ export default function Terminos() {
         </div>
 
       </main>
+      <Footer />
     </>
   )
 }
