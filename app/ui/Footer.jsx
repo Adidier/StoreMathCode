@@ -25,10 +25,10 @@ export function Footer() {
                         </h1>
                     </header>
                     <div className="flex flex-col font-extralight text-sm">
-                        <Link className="p-1.5 rounded-lg hover:text-gray-300" href="/portal">Portal</Link>
-                        <Link className="p-1.5 rounded-lg hover:text-gray-300" href="/">Comprobante</Link>
-                        <Link className="p-1.5 rounded-lg hover:text-gray-300" href="/">Estatus</Link>
-                        <Link className="p-1.5 rounded-lg hover:text-gray-300" href="/">Pago</Link>
+                        {/* <Link className="p-1.5 rounded-lg hover:text-gray-300" href="/portal">Portal</Link> */}
+                        {/* <Link className="p-1.5 rounded-lg hover:text-gray-300" href="/">Comprobante</Link> */}
+                        {/* <Link className="p-1.5 rounded-lg hover:text-gray-300" href="/">Estatus</Link> */}
+                        {/* <Link className="p-1.5 rounded-lg hover:text-gray-300" href="/">Pago</Link> */}
                     </div>
                 </div>
                 <div>
