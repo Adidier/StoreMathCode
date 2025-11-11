@@ -13,11 +13,8 @@ export function Footer() {
                     </header>
                     <div className="flex flex-col gap-2 font-extralight text-sm">
                         <Link className="rounded-lg hover:text-amber-400" href="/">Inicio</Link>
-                        {/* <Link className="rounded-lg hover:text-amber-400" href="/nosotros">Nosotros</Link> */}
-                        <Link className="rounded-lg hover:text-amber-400" href="/">Productos</Link>
+                        <Link className="rounded-lg hover:text-amber-400" href="/productos">Productos</Link>
                         <Link className="rounded-lg hover:text-amber-400" href="/">Servicios</Link>
-                        {/* <Link className="rounded-lg hover:text-amber-400" href="/galeria">Galeria</Link> */}
-                        {/* <Link className="rounded-lg hover:text-amber-400" href="/">Tienda</Link> */}
                         <Link className="rounded-lg hover:text-amber-400" href="/contacto">Contacto</Link>
                     </div>
                 </div>
