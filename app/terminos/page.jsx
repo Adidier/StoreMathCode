@@ -3,7 +3,7 @@ import { Footer } from "../ui/Footer"
 export default function Terminos() {
   return (
     <>
-      <main className="flex flex-col place-self-center items-center p-15 w-1/2">
+      <main className="flex flex-col place-self-center items-center p-10 w-1/2">
         <header>
           <h1 className="text-5xl font-bold mb-6 text-sky-600">Terminos generales de venta</h1>
         </header>
