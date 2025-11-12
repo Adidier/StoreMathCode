@@ -1,11 +1,26 @@
 "use client";
 
-import { useFormState } from "react-dom";
+import { useFormStatus, useFormState } from "react-dom";
 import { createProduct } from "@/lib/actions";
 
 const initialState = {
   message: "",
 };
+
+function SubmitButton() {
+  const {pending} = useFormStatus();
+  return (
+    <button
+      disabled={pending}
+      type="submit"
+      className="rounded bg-green-400 text-white p-1.5 font-bold shadow max-w-1/6"
+    >
+      {
+        pending ? "..." : "CREAR"
+      }
+    </button>
+  )
+}
 
 export default function CreateProduct() {
   const [state, formAction, pending] = useFormState(
@@ -63,13 +78,7 @@ export default function CreateProduct() {
             />
           </div>
         </div>
-        <button
-          disabled={pending}
-          type="submit"
-          className="rounded bg-green-400 text-white p-1.5 font-bold shadow max-w-1/6"
-        >
-          CREAR
-        </button>
+        <SubmitButton />
       </form>
       {state?.message && (
         <div className="w-1/3 place-self-center m-10 p-7 rounded-md bg-red-500 text-gray-50 font-bold text-xl shadow-md">
