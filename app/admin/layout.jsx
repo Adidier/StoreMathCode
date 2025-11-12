@@ -7,6 +7,7 @@ export default function AdminLayout({ children }) {
                 <Link className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-200 font-bold hover:shadow-md transition-shadow" href="/admin">Inicio</Link>
                 <Link className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-200 font-bold hover:shadow-md transition-shadow" href="/admin/products">Productos</Link>
                 <Link className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-200 font-bold hover:shadow-md transition-shadow" href="/admin/pedidos">Pedidos</Link>
+                <Link className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-800 text-gray-200 font-bold hover:bg-gray-700 hover:shadow-md transition-shadow absolute bottom-2" href="/">Regresar a la tienda</Link>
             </nav>
             <main className="ml-60 p-5 flex flex-col">
                 {children}
