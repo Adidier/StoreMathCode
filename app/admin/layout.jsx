@@ -60,7 +60,7 @@ export default function AdminLayout({ children }) {
                   <Link className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-200 font-bold hover:shadow-md transition-shadow" href="/admin">Inicio</Link>
                   <Link className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-200 font-bold hover:shadow-md transition-shadow" href="/admin/products">Productos</Link>
                   <Link className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-200 font-bold hover:shadow-md transition-shadow" href="/admin/pedidos">Pedidos</Link>
-                  <button className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-800 text-gray-200 font-bold hover:bg-gray-700 hover:shadow-md transition-shadow absolute bottom-2" onClick={(e) => handleSignout(e)} >Cerrar Sesion</button>
+                  <button className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-800 text-gray-200 font-bold hover:bg-gray-700 hover:shadow-md transition-shadow absolute bottom-2" onClick={(e) => handleSignout(e)}>Cerrar Sesion</button>
                 </nav>
                 <main className="ml-60 p-5 flex flex-col">
                   {children}
@@ -69,9 +69,10 @@ export default function AdminLayout({ children }) {
               :
               <>
                 <main className="grid place-items-center bg-gray-100 h-screen">
-                  <div className="bg-gray-50 rounded-md w-1/3 shadow-md p-10 grid grid-rows-2 gap-5 place-items-center">
+                  <div className="bg-gray-50 rounded-md w-1/3 shadow-md p-10 grid grid-rows-3 gap-5 place-items-center">
                     <p className="font-bold text-3xl">Usuario no autorizado</p>
                     <Link className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-800 text-gray-200 font-bold hover:bg-gray-700 hover:shadow-md transition-shadow" href="/">Regresar a la tienda</Link>
+                    <button className="rounded-md shadow pl-5 pr-5 pt-1.5 pb-1.5 text-lg bg-gray-800 text-gray-200 font-bold hover:bg-gray-700 hover:shadow-md transition-shadow" onClick={(e) => handleSignout(e)}>Cerrar Sesion</button>
                   </div>
                 </main>
               </>
