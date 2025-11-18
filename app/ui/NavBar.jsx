@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { SearchBar } from "./SearchBar";
-import UserControls from "./UserControls";
 
 export function NavBar() {
     const path = usePathname()
@@ -21,7 +20,6 @@ export function NavBar() {
                     <SearchBar />
                 </div>
                 <div className="flex flex-row justify-center font-light text-xs pt-2 pb-2 bg-sky-600 text-white p-2">
-                    <UserControls />
                     <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/">SERVICIOS</Link>
                     <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/productos">PRODUCTOS</Link>
                     <Link className="p-1.5 rounded-lg hover:text-amber-400" href="/carrito">CARRITO</Link>
