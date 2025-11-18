@@ -1,13 +1,6 @@
-import { generateClient } from "aws-amplify/data";
 import { fetchServicios } from "@/lib/data";
 import { CatalogView } from "@/app/ui/CatalogView";
 import { Footer } from "@/app/ui/Footer";
-import type { Schema } from "@/amplify/data/resource";
-import { Amplify } from "aws-amplify";
-import outputs from "@/amplify_outputs.json";
-import "@aws-amplify/ui-react/styles.css";
-
-Amplify.configure(outputs);
 
 export default async function App() {
     const servicios = await fetchServicios();

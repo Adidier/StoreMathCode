@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Mulish } from "next/font/google";
 import "./globals.css"
 import { NavBar } from "./ui/NavBar";
 import { CartStatusButton } from "@/app/ui/CartStatusButton";
+import ConfigureAmplifyClientSide from "./ui/ConfigureAmplifyClientSide"
 import { Providers } from "@/app/context/Providers"
 
 const cormorant_garamond = Cormorant_Garamond({ weight: "300", subsets: ["latin"] })
@@ -25,6 +26,7 @@ export default function RootLayout({
         className={`${cormorant_garamond} ${mulish.variable} antialiased grid grid-rows-[auto_1fr_auto] min-h-screen`}
       >
         <Providers>
+          <ConfigureAmplifyClientSide />
           <NavBar />
           {children}
           <CartStatusButton />
