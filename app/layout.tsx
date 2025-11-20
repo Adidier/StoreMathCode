@@ -22,6 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Flashback - Tienda</title>
+        <link rel="icon" href="/favicon.svg" sizes="any" />
+      </head>
       <body
         className={`${cormorant_garamond} ${mulish.variable} antialiased grid grid-rows-[auto_1fr_auto] min-h-screen`}
       >
