@@ -27,12 +27,14 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <body
-        className={`${cormorant_garamond} ${mulish.variable} antialiased grid grid-rows-[auto_1fr_auto] min-h-screen`}
+        className={`${cormorant_garamond} ${mulish.variable} antialiased`}
       >
         <Providers>
           <ConfigureAmplifyClientSide />
-          <NavBar />
-          {children}
+          <div className="grid grid-rows-[auto_1fr_auto] h-screen">
+            <NavBar />
+            {children}
+          </div>
           <CartStatusButton />
         </Providers>
       </body>
