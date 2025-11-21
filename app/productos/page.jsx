@@ -8,7 +8,7 @@ export default async function Productos() {
     if (productos === null) {
         return (
             <>
-                <main className="grid justify-items-center items-center bg-gray-100">
+                <main className="grid place-items-center bg-gray-100">
                     <p className="rounded-md bg-gray-50 p-5 text-xl font-bold shadow-md">No tenemos productos disponibles</p>
                 </main>
                 <Footer />
@@ -19,7 +19,7 @@ export default async function Productos() {
         else {
             return (
                 <>
-                    <main className="flex flex-col place-items-center bg-gray-100">
+                    <main className="grid place-items-center bg-gray-100">
                         <CatalogView data={productos.data} />
                         <SpecialProductBanner />
                     </main>
